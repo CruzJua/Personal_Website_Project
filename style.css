@@ -1,11 +1,27 @@
+:root {
+    --Primary-Color: #3F403B;
+    --Secondary-Color: #82A8B8;
+}
+
+
 h1, h2, h3 {
     text-align: center;
 }
-ul {
+nav {
     display: flex;
     justify-content: space-around;
 }
-nav {
-    display: flex;
-    
+header {
+    background-color: var(--Secondary-Color);
+    color: var(--Primary-Color);
+}
+body {
+    background-color: var(--Primary-Color);
+    color: var(--Secondary-Color);
+}
+a:link {
+    color: #607ebc;
+}
+a:visited {
+    color: #278783;
 }
