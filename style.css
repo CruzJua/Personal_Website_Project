@@ -25,10 +25,26 @@ article {
     border-style: solid;
     border-color: #092241;
     width: 50%;
+    position: relative;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-right: 8px;
 }
 a:link {
     color: #607ebc;
 }
 a:visited {
     color: #278783;
+}
+img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+    top: 180;
+    padding-right: 8px;
 }
