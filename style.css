@@ -14,10 +14,17 @@ nav {
 header {
     background-color: var(--Secondary-Color);
     color: var(--Primary-Color);
+    padding: 2px;
 }
 body {
     background-color: var(--Primary-Color);
     color: var(--Secondary-Color);
+}
+article {
+    padding: 15px;
+    border-style: solid;
+    border-color: #092241;
+    width: 50%;
 }
 a:link {
     color: #607ebc;
