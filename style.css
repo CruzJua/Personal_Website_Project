@@ -19,6 +19,7 @@ header {
 body {
     background-color: var(--Primary-Color);
     color: var(--Secondary-Color);
+    justify-content: center;
 }
 article {
     padding: 15px;
@@ -40,6 +41,21 @@ a:visited {
     color: #278783;
 }
 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+table {
+    border-style: solid;
+    border-color: #000;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #c7b7fc;
+    color: #071932;
+}
+.selfie {
     width: 250px;
     height: 250px;
     object-fit: cover;
