@@ -28,6 +28,9 @@ header.light-theme {
 h1, h2, h3 {
     text-align: center;
 }
+p {
+    text-indent: 15px;
+}
 nav {
     display: flex;
     justify-content: space-around;
@@ -102,6 +105,15 @@ tr:nth-child(even) {
     right: 0;
     top: 180;
     padding-right: 8px;
+}
+.goal {
+    width: 275px;
+    height: 275px;
+    object-fit:contain;
+    position: fixed;
+    right: 0;
+    top: 180;
+    padding-right: 8px; 
 }
 /* ========= Print Style ========*/
 @media print {
