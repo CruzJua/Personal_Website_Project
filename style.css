@@ -3,6 +3,8 @@
     --Text-Color: #e6d3ab;
     --Accent-Color: #34617f;
     --Border-Color: #5f8fa5;
+    --Visited-Text: #55f5ff;
+    --Link-Text: #35b7d1;
 
 }
 
@@ -11,6 +13,15 @@ body.light-theme {
     --Text-Color: #051c38;
     --Accent-Color: #e6d3ab;
     --Border-Color: #34617f;
+    --Visited-Text: #25606a;
+    --Link-Text: #55f5ff;
+}
+
+body.alt-theme {
+    --Background-Color: #9985f3;
+    --Text-Color: #f4ecfe;
+    --Accent-Color: #c7b7fc;
+    --Border-Color: #e2d3ef;
 }
 
 
@@ -62,10 +73,10 @@ footer{
     background: rgba(255, 255, 255, 0.3);
 }
 a:link {
-    color: --New-Link;
+    color: var(--Link-Text);
 }
 a:visited {
-    color: --Old-Link;
+    color: var(--Visited-Text);
 }
 img {
     display: block;
