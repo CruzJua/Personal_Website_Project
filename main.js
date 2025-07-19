@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', function(){
         const isLight = body.classList.contains('light-theme');
 
         //Update button text
-        themeToggle.textContent = isLight ? 'dark Mode' : 'light Mode'
+        themeToggle.textContent = isLight ? 'Dark Mode' : 'Light Mode'
 
         //Save the theme preferences
-        localStorage.setItem('theme', isLight ? 'light' : 'lightt')
+        localStorage.setItem('theme', isLight ? 'light' : 'dark')
     });
 });
