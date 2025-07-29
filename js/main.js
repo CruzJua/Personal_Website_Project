@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const altTheme = localStorage.getItem('altTheme')
     if (altTheme === 'true') {
         theme.className = 'alt-theme'
-        theme.setAttribute('href', 'style2.css');
+        theme.setAttribute('href', 'css/style2.css');
         altToggle.textContent = 'Normal Theme';
         themeToggle.hidden = 'true';
     }
@@ -53,11 +53,11 @@ document.addEventListener('DOMContentLoaded', function(){
         altToggle.textContent = isAltTheme ? 'Alt Theme' : 'Normal Theme'
 
         if (isAltTheme) {
-            theme.setAttribute('href', 'style2.css');
+            theme.setAttribute('href', 'css/style2.css');
             localStorage.setItem('altTheme', "true");
             themeToggle.hidden = 'true';
         } else {
-            theme.setAttribute('href', 'style.css');
+            theme.setAttribute('href', 'css/style.css');
             localStorage.setItem('altTheme', "false");
             themeToggle.hidden = 'false';
         }
