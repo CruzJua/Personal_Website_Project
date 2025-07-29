@@ -5,12 +5,25 @@ document.addEventListener('DOMContentLoaded', function(){
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
 
+    const altToggle = document.getElementById('alt-theme');
+    const theme = document.getElementById('stylesheet')
+
+        const altTheme = localStorage.getItem('altTheme')
+    if (altTheme === 'true') {
+        theme.className = 'alt-theme'
+        theme.setAttribute('href', 'style2.css');
+        altToggle.textContent = 'Normal Theme';
+        themeToggle.hidden = 'true';
+    }
+
     //Check if user had a saved theme preference
     const savedTheme = localStorage.getItem('theme')
     if(savedTheme === 'light') {
         body.classList.add('light-theme');
         themeToggle.textContent = 'Dark Mode';
     }
+
+
 
     //Add click event to theme toggle button
     themeToggle.addEventListener('click', function() {
@@ -25,5 +38,28 @@ document.addEventListener('DOMContentLoaded', function(){
 
         //Save the theme preferences
         localStorage.setItem('theme', isLight ? 'light' : 'dark')
+    });
+
+
+
+
+    altToggle.addEventListener('click', function() {
+        theme.classList.toggle('alt-theme');
+
+        //Check if the alt theme is now active
+        const isAltTheme = theme.classList.contains('alt-theme');
+
+        //Update button text
+        altToggle.textContent = isAltTheme ? 'Alt Theme' : 'Normal Theme'
+
+        if (isAltTheme) {
+            theme.setAttribute('href', 'style2.css');
+            localStorage.setItem('altTheme', "true");
+            themeToggle.hidden = 'true';
+        } else {
+            theme.setAttribute('href', 'style.css');
+            localStorage.setItem('altTheme', "false");
+            themeToggle.hidden = 'false';
+        }
     });
 });

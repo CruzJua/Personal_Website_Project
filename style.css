@@ -17,14 +17,6 @@ body.light-theme {
     --Link-Text: #55f5ff;
 }
 
-body.alt-theme {
-    --Background-Color: #9985f3;
-    --Text-Color: #f4ecfe;
-    --Accent-Color: #c7b7fc;
-    --Border-Color: #e2d3ef;
-}
-
-
 h1, h2, h3 {
     text-align: center;
 }
@@ -72,6 +64,21 @@ footer{
 .theme-toggle:hover {
     background: rgba(255, 255, 255, 0.3);
 }
+.alt-theme {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0,3s;
+}
+.alt-theme:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
 a:link {
     color: var(--Link-Text);
 }
@@ -82,6 +89,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 12px;
     width: 40%;
 }
 table {

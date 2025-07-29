@@ -4,44 +4,48 @@
     <meta charset="utf-8">
     <meta name="Author" content="Juan Cruz">
     <title>Interests page</title>
-    <link rel="stylesheet" href="style.css">
+    <link id="stylesheet" rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <button class="theme-toggle" id="theme-toggle">Light Mode</button>
-        <h1>Interests</h1>
-    </header>
-    <nav role="navigation" aria-label="main navigation">
-        <a href="index.html">Home</a>
-        <a href="interests.html">Interests</a>
-        <a href="plans.html">Plans</a>
-        <a href="favorites.html">Favorites</a>
-    </nav>
-    <main id="main-content" role="main">
-        <section rol="interests">
-            <h1>What do I Like</h1>
-            <img class="gif" src="images/wrestling.gif" alt="wrestling.gif">
-            <article id="current-interests" role="interests">
-                <table>
-                    <tr>
-                        <th>Video Games</th><th>Board/Card Games</th><th>Sports</th>
-                    </tr>
-                    <tr>
-                        <td>Destiny 2</td><td>Magic The Gathering</td><td>Freesyle Wrestling</td>
-                    </tr>
-                    <tr>
-                        <td>Call of Duty</td><td>Screaming Librarian</td><td>Folkstyle Wrestling</td>
-                    </tr>
-                    <tr>
-                        <td>Rocket League</td><td>FlameCraft</td><td>Greek-Roman Wrestling</td>
-                    </tr>
-                </table>
-            </article>
-        </section>
-    </main>
-    <script src="main.js"></script>
+    <div class="container">
+        <header>
+            <button class="theme-toggle" id="theme-toggle">Light Mode</button>
+            <button class="alt-theme" id="alt-theme">Alt Theme</button>
+            <h1>Interests</h1>
+        </header>
+        <nav role="navigation" aria-label="main navigation">
+            <a href="index.html">Home</a>
+            <a href="interests.html">Interests</a>
+            <a href="plans.html">Plans</a>
+            <a href="favorites.html">Favorites</a>
+        </nav>
+        <main id="main-content" role="main">
+            <section rol="interests">
+                <h1>What do I Like</h1>
+                <img class="gif" src="images/wrestling.gif" alt="wrestling.gif">
+                <article id="current-interests" role="interests">
+                    <table>
+                        <tr>
+                            <th>Video Games</th><th>Board/Card Games</th><th>Sports</th>
+                        </tr>
+                        <tr>
+                            <td>Destiny 2</td><td>Magic The Gathering</td><td>Freesyle Wrestling</td>
+                        </tr>
+                        <tr>
+                            <td>Call of Duty</td><td>Screaming Librarian</td><td>Folkstyle Wrestling</td>
+                        </tr>
+                        <tr>
+                            <td>Rocket League</td><td>FlameCraft</td><td>Greek-Roman Wrestling</td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+        </main>
+        <script src="main.js"></script>
+        <footer>
+            <p>Copyright ©2025 by Juan Cruz</p>
+        </footer>
+    </div>
 </body>
-<footer>
-        <p>Copyright ©2025 by Juan Cruz</p>
-    </footer>
+</html>

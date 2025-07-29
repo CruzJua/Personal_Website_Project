@@ -4,39 +4,43 @@
     <meta charset="utf-8">
     <meta name="Author" content="Juan Cruz">
     <title>Favorites page</title>
-    <link rel="stylesheet" href="style.css">
+    <link id="stylesheet" rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <button class="theme-toggle" id="theme-toggle">Light Mode</button>
-        <h1>Favorites</h1>
-    </header>
-    <nav role="navigation" aria-label="main navigation">
-                    <a href="index.html">Home</a>
-                    <a href="interests.html">Interests</a>
-                    <a href="plans.html">Plans</a>
-                    <a href="favorites.html">Favorites</a>
-    </nav>
-    <main id="main-content" role="main">
-        <section role="Favorites">
-            <h1>My Favorites</h1>
-            <article id="current-favorites" role="favorites">
-                <ol>
-                    <li><a href="https://gemini.google.com/app" target="_blank">Gemini</a></li>
-                    <li><a href="https://github.com/CruzJua" target="_blank">Personal Github</a></li>
-                    <li><a href="https://moxfield.com/" target="_blank">Moxfield</a></li>
-                    <li><a href="https://huggingface.co/" target="_blank">Hugging Face</a></li>
-                    <li><a href="https://www.crunchyroll.com/" target="_blank">Cruncyroll</a></li>
-                    <li><a href="https://www.amazon.com/" target="_blank">Amazon</a></li>
-                    <li><a href="youtube.com" target="_blank">YouTube</a></li>
-                    <li><a href="https://www.geeksforgeeks.org/" target="_blank">Geeks for Geeks</a></li>
-                </ol>
-            </article>
-        </section>
-    </main>
-    <script src="main.js"></script>
+    <div class='container'>
+        <header>
+            <button class="theme-toggle" id="theme-toggle">Light Mode</button>
+            <button class="alt-theme" id="alt-theme">Alt Theme</button>
+            <h1>Favorites</h1>
+        </header>
+        <nav role="navigation" aria-label="main navigation">
+                        <a href="index.html">Home</a>
+                        <a href="interests.html">Interests</a>
+                        <a href="plans.html">Plans</a>
+                        <a href="favorites.html">Favorites</a>
+        </nav>
+        <main id="main-content" role="main">
+            <section role="Favorites">
+                <h1>My Favorites</h1>
+                <article id="current-favorites" role="favorites">
+                    <ol>
+                        <li><a href="https://gemini.google.com/app" target="_blank">Gemini</a></li>
+                        <li><a href="https://github.com/CruzJua" target="_blank">Personal Github</a></li>
+                        <li><a href="https://moxfield.com/" target="_blank">Moxfield</a></li>
+                        <li><a href="https://huggingface.co/" target="_blank">Hugging Face</a></li>
+                        <li><a href="https://www.crunchyroll.com/" target="_blank">Cruncyroll</a></li>
+                        <li><a href="https://www.amazon.com/" target="_blank">Amazon</a></li>
+                        <li><a href="youtube.com" target="_blank">YouTube</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/" target="_blank">Geeks for Geeks</a></li>
+                    </ol>
+                </article>
+            </section>
+        </main>
+        <script src="main.js"></script>
+            <footer>
+            <p>Copyright ©2025 by Juan Cruz</p>
+        </footer>
+    </div>
 </body>
-    <footer>
-        <p>Copyright ©2025 by Juan Cruz</p>
-    </footer>
+</html>
