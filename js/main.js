@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', function(){
     const altToggle = document.getElementById('alt-theme');
     const theme = document.getElementById('stylesheet')
 
-        const altTheme = localStorage.getItem('altTheme')
+    const altTheme = localStorage.getItem('altTheme')
     if (altTheme === 'true') {
         theme.className = 'alt-theme'
         theme.setAttribute('href', 'css/style2.css');
         altToggle.textContent = 'Normal Theme';
-        themeToggle.hidden = 'true';
+        themeToggle.style.display = 'none';
     }
 
     //Check if user had a saved theme preference
@@ -55,11 +55,11 @@ document.addEventListener('DOMContentLoaded', function(){
         if (isAltTheme) {
             theme.setAttribute('href', 'css/style2.css');
             localStorage.setItem('altTheme', "true");
-            themeToggle.hidden = 'true';
+            themeToggle.style.display = 'none';
         } else {
             theme.setAttribute('href', 'css/style.css');
             localStorage.setItem('altTheme', "false");
-            themeToggle.hidden = 'false';
+            themeToggle.style.display = 'block';
         }
     });
 });
