@@ -40,5 +40,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // fetchQuote(api_url);
-    slideShow = setInterval(makeSlideShow, 10000);
+    slideShow = setInterval(makeSlideShow, 4000);
 });
