@@ -6,8 +6,8 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: small;
 }
-html body {
-    background: url(../images/background.png);
+html, body {
+    background: url('/Personal_Website_Project/images/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
