@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function makeSlideShow() {
         currentSlide = slide();
         const slideView = document.getElementById('selfie')
-        slideView.setAttribute('src', `slide${currentSlide}.jpg`)
+        slideView.setAttribute('src', `./images/slide${currentSlide}.jpg`)
     }
 
     // fetchQuote(api_url);
