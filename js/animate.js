@@ -39,6 +39,6 @@ document.addEventListener("DOMContentLoaded", function() {
         slideView.setAttribute('src', `./images/slide${currentSlide}.jpg`)
     }
 
-    // fetchQuote(api_url);
+    fetchQuote(api_url);
     slideShow = setInterval(makeSlideShow, 4000);
 });
