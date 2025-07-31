@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log(error);
         }
     }
-
     function moveSlide() {
         let count = 0;
 
@@ -31,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
             return count - 1;
         }
     }
+
     let slide = moveSlide()
 
     function makeSlideShow() {
