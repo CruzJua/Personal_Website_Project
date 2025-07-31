@@ -5,18 +5,17 @@
     --Border-Color: #5f8fa5;
     --Visited-Text: #55f5ff;
     --Link-Text: #35b7d1;
-
 }
-
+* {
+    font-family: sans-serif;
+}
 body.light-theme {
     --Background-Color: #5f8fa5;
     --Text-Color: #051c38;
-    --Accent-Color: #e6d3ab;
-    --Border-Color: #34617f;
+    --Accent-Color: #c6b38b;
     --Visited-Text: #25606a;
     --Link-Text: #55f5ff;
 }
-
 h1, h2, h3 {
     text-align: center;
 }
@@ -30,6 +29,9 @@ nav {
 header {
     background-color: var(--Accent-Color);
     padding: 2px;
+    margin-bottom: 1rem;
+    border-radius: 1.8rem;
+    text-align: center;
 }
 body {
     background-color: var(--Background-Color);
@@ -38,16 +40,49 @@ body {
 }
 article {
     padding: 15px;
-    border-style: solid;
-    border-color: var(--Border-Color);
-    width: 50%;
     position: relative;
 }
-footer{
+footer {
     position: fixed;
     bottom: 0;
     right: 0;
     padding-right: 8px;
+}
+ul {
+    text-align: left;
+}
+.skill-info {
+    border: #05f4922f solid;
+    text-align: left;
+    border-radius: 1.7rem;
+    margin: 1rem;
+}
+.project-info {
+    border: #05f4922f solid;
+    border-radius: 1.7rem;
+    margin: 1rem;
+}
+.project-container{
+    border-top: #05f4922f solid;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+.project {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 6px;
+    margin: 1rem;
+    box-sizing: border-box;
+    border: white solid;
+    min-width: 25%;
+    min-height: 25%;
+    text-align: left;
+}
+.project p {
+    font-size: small;
+    text-indent: 0;
+    width: 50%;
+    position: relative;
 }
 .theme-toggle {
     position: absolute;
@@ -55,11 +90,11 @@ footer{
     right: 1rem;
     background: rgba(255, 255, 255, 0.2);
     border: none;
-    color: white;
+    color: black;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     cursor: pointer;
-    transition: background 0,3s;
+    transition: background 0.3s;
 }
 .theme-toggle:hover {
     background: rgba(255, 255, 255, 0.3);
@@ -70,7 +105,7 @@ footer{
     left: 1rem;
     background: rgba(255, 255, 255, 0.2);
     border: none;
-    color: white;
+    color: black;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     cursor: pointer;
@@ -92,15 +127,6 @@ img {
     padding-bottom: 12px;
     width: 40%;
 }
-table {
-    border-style: solid;
-    border-color: var(--Border-Color);
-    text-align: center;
-}
-tr:nth-child(even) {
-    background-color: var(--Text-Color);
-    color: var(--Background-Color);
-}
 .selfie {
     width: 250px;
     height: 250px;
@@ -110,14 +136,17 @@ tr:nth-child(even) {
     top: 180;
     padding-right: 8px;
 }
-.goal {
-    width: 275px;
-    height: 275px;
-    object-fit:contain;
-    position: fixed;
-    right: 0;
-    top: 180;
-    padding-right: 8px; 
+.container {
+    width: 75%;
+    max-height: max-content;
+    text-align: center;
+    border-radius: 2rem;
+    border-color: aquamarine;
+    box-sizing: border-box;
+    border: solid;
+    position:relative;
+    margin: 0 auto;
+    background: #0000000f;
 }
 /* ========= Print Style ========*/
 @media print {
